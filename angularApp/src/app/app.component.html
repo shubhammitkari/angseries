@@ -1,0 +1,37 @@
+<!-- My Name is {{name}} and my Youtube Channel is {{ytChannel}}
+
+{{5*15 }}
+
+<br><br><br><br><br>
+=======================
+<br><br><br><br><br><br>
+
+
+<input type="text" placeholder="Username" [(ngModel)] ="usernm" >
+<p>Your User Name is <span style="color:green">{{usernm}}</span></p> -->
+
+<!-- <app-myContainer></app-myContainer> -->
+
+<!-- <app-databind></app-databind> -->
+<!-- <app-class-style></app-class-style> -->
+<!-- <app-eventbind></app-eventbind> -->
+<!-- <app-two-way></app-two-way> -->
+<!-- <app-ngif></app-ngif> -->
+<!-- <app-ngswitch></app-ngswitch> -->
+<!-- <app-ngfor></app-ngfor> -->
+
+<header>
+    <nav>
+        <ul class="nav nav-tabs">
+            <li class="nav-item"><a class="nav-link" routerLinkActive="myActiveClass active" [routerLinkActiveOptions]="{exact:true}" routerLink="/home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" routerLinkActive="myActiveClass active" routerLink="/about">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" routerLinkActive="myActiveClass active" routerLink="/products/">Products</a></li>
+            <li class="nav-item"><a class="nav-link" routerLinkActive="myActiveClass active" routerLink="/contact">Contact Us</a></li>
+            <li class="nav-item"><a class="nav-link" routerLinkActive="myActiveClass active" routerLink="/contact2">Contact 2</a></li>
+            <li class="nav-item"><a class="nav-link" routerLinkActive="myActiveClass active" routerLink="/notFound">Not Found</a></li>
+            <li class="nav-item"><a class="nav-link" routerLinkActive="myActiveClass active" routerLink="/buy-products/">Buy Products</a></li>
+        </ul>
+    </nav>
+</header>
+<router-outlet></router-outlet>
+

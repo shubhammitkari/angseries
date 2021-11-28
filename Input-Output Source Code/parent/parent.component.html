@@ -1,0 +1,49 @@
+<div class="page-area">
+  <div class="text-center">
+      <h2>Buy Products</h2>
+  </div>
+  <div class="alert alert-light border d-flex align-items-center" *ngIf="addedProduct">
+    <strong class="text-success">{{addedProduct}}</strong> &nbsp; is Selected and Added in Cart
+    <button class="btn btn-success ml-auto">Checkout</button>
+  </div>
+  <hr class="mb-3">
+
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <img src="../../assets/images/laptop.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Laptop</h5>
+          <button class="btn btn-success" (click)="onSelectProduct('Laptop')" >Select this Product</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../../assets/images/mobile.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Mobile</h5>
+          <button class="btn btn-success" (click)="onSelectProduct('Mobile')" >Select this Product</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../../assets/images/television.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Television</h5>
+          <button class="btn btn-success" (click)="onSelectProduct('Television')" >Select this Product</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../../assets/images/washing-machine.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Washing Machine</h5>
+          <button class="btn btn-success" (click)="onSelectProduct('Washing Machine')" >Select this Product</button>
+        </div>
+      </div>
+    </div>
+    <app-child class="w-100" 
+    [productSelected]="proSelected" 
+    [selectedProduct]="selProduct"
+    (addedProduct)="onAddedProduct($event)"
+    ></app-child>
+    
+  </div>
+</div>

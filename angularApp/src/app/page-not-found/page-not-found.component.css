@@ -1,0 +1,19 @@
+.page-area{
+    width: 80%;
+    margin: 0 auto;
+    padding: 15px;
+    min-height: 400px;
+    text-align: center;
+    background: rgb(255, 255, 255);
+    border: 1px solid #ddd;
+}
+h1{
+    font-size: 179px;
+    font-weight: 600;
+    line-height: 1;
+    color: #65ba69;
+}
+h2 {
+    font-size: 28px;
+    letter-spacing: 4px;
+}

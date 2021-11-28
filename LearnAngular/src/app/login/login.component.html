@@ -1,0 +1,17 @@
+<div class="page-area w-100" >
+  <form class="form-signin">
+    <img class="mb-4" src="../../assets/images/logo.png" alt="" width="200" class="mt-4 mb-3">
+    <h1 class="h4 mb-3 font-weight-normal">Please sign in</h1>
+
+    <input type="text" id="inputUser" #inputUser class="form-control mb-3" placeholder="Username" required="" autofocus="">
+    
+    <input type="password" id="inputPassword" #inputPassword class="form-control" placeholder="Password" required="">
+    <div class="checkbox my-3">
+      <label>
+        <input type="checkbox" value="remember-me"> Remember me
+      </label>
+    </div>
+    <button class="btn btn-success btn-block" (click)="onLoggedIn(inputUser, inputPassword)" type="button">Sign in</button>
+    <p class="mt-5 mb-3 text-muted">© 2017-2018</p>
+  </form>
+</div>

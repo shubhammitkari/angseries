@@ -1,0 +1,12 @@
+.page-area{
+    width: 80%;
+    margin: 0 auto;
+    padding: 15px;
+    min-height: 400px;
+    text-align: center;
+    background: #f8f8f8;
+}
+ul {
+    display: inline-block;
+    text-align: left;
+}
